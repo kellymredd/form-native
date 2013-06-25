@@ -1,0 +1,141 @@
+/*  
+    This is the form-native.js base css file.
+
+    This file contains the default styles for the custom form elements 
+    that users can override in their own custom style sheet.
+*/
+
+// Create CSS Triangles in a Breeze
+@mixin cssTriangle($triangleSize, $triangleColor, $triangleDirection) {
+    border: solid $triangleSize;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    @if ($triangleDirection == top) {
+      border-color: $triangleColor transparent transparent transparent;
+    }
+    @if ($triangleDirection == bottom) {
+      border-color: transparent transparent $triangleColor transparent;
+    }
+    @if ($triangleDirection == left) {
+      border-color: transparent transparent transparent $triangleColor;
+    }
+    @if ($triangleDirection == right) {
+      border-color: transparent $triangleColor transparent transparent;
+    }
+    // .example { @include cssTriangle(5px, #fff, bottom); }
+}
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+
+//select box size and color variables
+
+$arrowWidth: 30px;
+$arrowSize: 5px;
+$foreground: lighten(#000, 40%);
+$background: lighten(#000, 99%);
+$border: solid 1px lighten($foreground, 30%);
+
+.fntv {
+    position: relative;
+    &.fntv-readonly {
+        border: 1px solid red !important;
+    }
+    &.fntv-disabled {
+        border: 1px solid green !important;
+        opacity: .5;
+    }
+    > {
+        .fntv-select-box {
+            background-color: $background;
+            border: $border;
+            color: $foreground;
+            display: block;
+            overflow:hidden;
+            padding: 10px;
+            width: auto;
+            white-space: nowrap;
+            &:focus {
+                background: $background; 
+            }
+            .fntv-arrow {
+                background: $background;
+                border: $border;
+                cursor: pointer;
+                display: block;
+                height:100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: $arrowWidth;
+                &:before {
+                    @include cssTriangle($arrowSize, $foreground, top);
+                    left:50%;
+                    margin-top:-($arrowSize/2);
+                    margin-left:-($arrowSize);
+                    position: absolute;
+                    top:50%;
+                }
+            }
+        }
+        .fntv-list {
+            background: $background;
+            border: $border;
+            border-top:0;
+            display: none;
+            height: 100%;
+            min-height: 150px;
+            overflow-y: scroll;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            z-index: 5;
+            &.fntv-openAbove {
+                border: $border;
+            }
+            > a {
+                color: $foreground;
+                display: block;
+                padding: 4px;
+                width: 100%;
+                &.fntv-current-choice {
+                    background: #ddd;
+                }
+                &.fntv-current-selection:after {
+                    content: '\00a0\2713';
+                }    
+            }
+        }
+    }
+
+    //checkbox and radio size variables
+    $selectedColor: lighten(red, 30%);
+    $size: 20px;
+    $borderSize: 4px;
+
+    a {
+        &.fntv-checkbox {
+            background: $background;
+            border: $borderSize solid $foreground;
+            display: inline-block;
+            height: $size;
+            width: $size;
+            &.fntv-checkboxChecked {
+                background: $selectedColor;
+            }
+        }
+        &.fntv-radio {
+            background: $background;
+            border: $borderSize solid $foreground;
+            border-radius: $size/2;
+            display: inline-block;
+            height: $size;
+            width: $size;
+            &.fntv-radioChecked {
+                background: $selectedColor;
+            }
+        }
+    }
+}

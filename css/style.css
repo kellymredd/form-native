@@ -1,0 +1,79 @@
+/* non form-native styles that either style the form or override form-native styles */
+/* line 3, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+  line-height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* line 12, ../sass/style.scss */
+html {
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 18, ../sass/style.scss */
+body {
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+  background: #f9f9f9;
+  margin: 50px auto 0;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* line 28, ../sass/style.scss */
+hr {
+  float: left;
+  height: 1px;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* line 35, ../sass/style.scss */
+button {
+  clear: both;
+  float: left;
+  margin-top: 30px;
+  padding: 10px 15px;
+}
+
+/* line 42, ../sass/style.scss */
+.state {
+  display: block;
+  width: 33%;
+  float: left;
+  padding: 0 5px;
+}
+
+/* line 49, ../sass/style.scss */
+label {
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 55, ../sass/style.scss */
+.ajax {
+  clear: both;
+}
+
+/* line 58, ../sass/style.scss */
+.readonly-btn {
+  border: 2px solid red;
+}
+
+/* line 59, ../sass/style.scss */
+.remove-readonly-btn {
+  border: 2px solid #ddd;
+}
+
+/* line 60, ../sass/style.scss */
+.disable-btn {
+  border: 2px solid green;
+}
