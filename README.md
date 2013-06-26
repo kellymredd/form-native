@@ -9,9 +9,17 @@ NOTE: Still being worked on and tested. Has yet to be let loose in the wild (ie:
 Implementation
 --------------
 
-Simply add form-native.js and form-native.css or .scss to your js folder and call it thusly:
+Simply add form-native.js and form-native.css or .scss to your project and call it thusly:
 
     $('form').form-native();
+
+
+Form-native.js expected form element markup:
+
+	<label>
+		<input type="text | radio | checkbox | etc">
+		Name of label
+	</label>
 
 
 SASS vs. non-SASS files
@@ -19,3 +27,5 @@ SASS vs. non-SASS files
 
 Form-native.js comes with two versions of a base style sheet. You can choose to use the SASS version or the non-SASS - both of which are identical
 as the non-SASS version is just the compiled version of the SASS file.
+
+NOTE: The SASS version requires Compass.
