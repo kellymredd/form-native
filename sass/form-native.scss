@@ -29,25 +29,57 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
 
+// .fntv-checkbox and .fntv-radio size variables
+$selectedColor: lighten(red, 30%);
+$size: 20px;
+$borderSize: 4px;
 
-//select box size and color variables
-
+// .fntv-select size and color variables
 $arrowWidth: 30px;
 $arrowSize: 5px;
 $foreground: lighten(#000, 40%);
 $background: lighten(#000, 99%);
 $border: solid 1px lighten($foreground, 30%);
 
+
 .fntv {
-    position: relative;
-    &.fntv-readonly {
-        border: 1px solid red !important;
+    &.fntv-checkbox {
+        background: $background;
+        border: $borderSize solid $foreground;
+        float: left;
+        height: $size;
+        margin-right: 5px;
+        width: $size;
+        &.fntv-checkboxChecked {
+            background: $selectedColor;
+        }
     }
-    &.fntv-disabled {
-        border: 1px solid green !important;
-        opacity: .5;
+    /* optional span: for fine-tuning label text positioning */
+    &.fntv-checkbox ~ span {
+        float: left;
+        margin-top: 3px;
     }
-    > {
+
+    &.fntv-radio {
+        background: $background;
+        border: $borderSize solid $foreground;
+        border-radius: $size/2;
+        float: left;
+        height: $size;
+        margin-right: 5px;
+        width: $size;
+        &.fntv-radioChecked {
+            background: $selectedColor;
+        }
+    }
+    /* optional span: for fine-tuning label text positioning */
+    &.fntv-radio ~ span {
+        float: left;
+        margin-top: 3px;
+    }
+
+    &.fntv-select {
+        position: relative;
         .fntv-select-box {
             background-color: $background;
             border: $border;
@@ -108,34 +140,12 @@ $border: solid 1px lighten($foreground, 30%);
                 }    
             }
         }
+    } // close .fnt-v-select
+    &.fntv-readonly {
+        border: 1px solid red !important;
     }
-
-    //checkbox and radio size variables
-    $selectedColor: lighten(red, 30%);
-    $size: 20px;
-    $borderSize: 4px;
-
-    a {
-        &.fntv-checkbox {
-            background: $background;
-            border: $borderSize solid $foreground;
-            display: inline-block;
-            height: $size;
-            width: $size;
-            &.fntv-checkboxChecked {
-                background: $selectedColor;
-            }
-        }
-        &.fntv-radio {
-            background: $background;
-            border: $borderSize solid $foreground;
-            border-radius: $size/2;
-            display: inline-block;
-            height: $size;
-            width: $size;
-            &.fntv-radioChecked {
-                background: $selectedColor;
-            }
-        }
+    &.fntv-disabled {
+        border: 1px solid green !important;
+        opacity: .5;
     }
-}
+} // close .fntv
