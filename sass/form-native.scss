@@ -26,8 +26,6 @@
     }
     // .example { @include cssTriangle(5px, #fff, bottom); }
 }
-@import "compass/css3";
-@import "compass/utilities/general/clearfix";
 
 // .fntv-checkbox and .fntv-radio size variables
 $selectedColor: lighten(red, 30%);
@@ -41,7 +39,6 @@ $foreground: lighten(#000, 40%);
 $background: lighten(#000, 99%);
 $border: solid 1px lighten($foreground, 30%);
 
-
 .fntv {
     &.fntv-checkbox {
         background: $background;
@@ -53,11 +50,6 @@ $border: solid 1px lighten($foreground, 30%);
         &.fntv-checkboxChecked {
             background: $selectedColor;
         }
-    }
-    /* optional span: for fine-tuning label text positioning */
-    &.fntv-checkbox ~ span {
-        float: left;
-        margin-top: 3px;
     }
 
     &.fntv-radio {
@@ -72,7 +64,9 @@ $border: solid 1px lighten($foreground, 30%);
             background: $selectedColor;
         }
     }
+    
     /* optional span: for fine-tuning label text positioning */
+    &.fntv-checkbox ~ span,
     &.fntv-radio ~ span {
         float: left;
         margin-top: 3px;
