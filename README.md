@@ -11,7 +11,7 @@ Implementation
 
 Simply add form-native.js and form-native.css or .scss to your project and call it thusly:
 
-    $('form').form-native();
+    $('form').formidable();
 
 
 Form-native.js expected form element markup:
