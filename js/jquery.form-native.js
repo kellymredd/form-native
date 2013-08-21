@@ -2,7 +2,7 @@
 
     "use strict";
 
-    if (window.formidable !== undefined){
+    if (window.formidable !== undefined) {
         return;
     }
 
@@ -37,10 +37,12 @@
 
         isTouch = function(){
             var ua = navigator.userAgent.toLowerCase(),
-                isAndroid = ua.indexOf("android") > -1,
-                isIphone = ua.indexOf("iphone") > -1,
-                isIpad = ua.indexOf("iphone") > -1;
-            if( isAndroid || isIphone || isIpad ){
+                isAndroid = ua.match("android"),
+                isIphone = ua.match("iphone"),
+                isIpad = ua.match("ipad"),
+                isIpod = ua.match("ipod");
+
+            if (isAndroid || isIphone || isIpad || isIpod) {
                 return true;
             }
         };
