@@ -2,13 +2,13 @@
 
     "use strict";
 
-    if (window.formidable !== undefined) {
+    if (window.formnative !== undefined) {
         return;
     }
 
-    $.fn.formidable = function(options){
+    $.fn.formnative = function(options){
 
-        options = $.extend({}, $.fn.formidable.defaultOptions, options);
+        options = $.extend({}, $.fn.formnative.defaultOptions, options);
 
         var killEvent, setEnabled, removeEnabled, setReadonly, removeReadonly, 
             isTouch, KEY, createCheckbox, createRadio, createSelect, syncAttributes,
@@ -535,7 +535,6 @@
         };
         // end createSelect()
 
-
         // loop thru form and customize all elements
         this.find('input[type="checkbox"]').each(function(){
             createCheckbox( $(this).parent() );
@@ -547,8 +546,9 @@
             createSelect( $(this) );
         });
     };
-        //added default options
-    $.fn.formidable.defaultOptions = {
+    
+    //added default options
+    $.fn.formnative.defaultOptions = {
         'placeholderText' : 'Select...'
     };
 }(jQuery));
