@@ -11,23 +11,22 @@
 
 /* line 12, ../sass/style.scss */
 html {
-  font-family: Arial;
   height: 100%;
   width: 100%;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 body {
   font-family: Arial;
   height: 100%;
-  width: 100%;
   background: #f9f9f9;
-  margin: 50px auto 0;
+  margin: 0 auto;
+  padding-top: 50px;
   width: 100%;
   max-width: 960px;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 hr {
   float: left;
   height: 1px;
@@ -35,12 +34,12 @@ hr {
   width: 100%;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 form {
   padding: 0 10px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 button {
   clear: both;
   float: left;
@@ -48,7 +47,7 @@ button {
   padding: 10px 15px;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .state {
   display: block;
   width: 33.334%;
@@ -56,29 +55,29 @@ button {
   padding: 0 5px;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 label {
   cursor: pointer;
   float: left;
   margin-right: 10px;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .ajax {
   clear: both;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .readonly-btn {
   border: 2px solid red;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .remove-readonly-btn {
   border: 2px solid #ddd;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .disable-btn {
   border: 2px solid green;
 }
