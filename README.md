@@ -16,12 +16,12 @@ Simply add form-native.js and form-native.css or .scss to your project and call 
 
 Form-native.js expected form element markup:
 
-NOTE: The span around the name of label is optional and is used only for vertical positioning
-
 	<label>
 		<input type="text | radio | checkbox | etc">
 		<span>Name of label</span>
 	</label>
+
+NOTE: The span around the name of label is optional and is used only for vertical positioning
 
 
 SASS vs. non-SASS files
