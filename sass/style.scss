@@ -55,6 +55,10 @@ label {
   margin-right: 10px;
 }
 
+span.state > label {
+  width: 100%;
+}
+
 .ajax {
   clear:both;
 }

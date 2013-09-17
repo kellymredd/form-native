@@ -24,13 +24,16 @@ button { clear: both; float: left; margin-top: 30px; padding: 10px 15px; }
 label { cursor: pointer; float: left; margin-right: 10px; }
 
 /* line 58, ../sass/style.scss */
-.ajax { clear: both; }
-
-/* line 61, ../sass/style.scss */
-.readonly-btn { border: 2px solid red; }
+span.state > label { width: 100%; }
 
 /* line 62, ../sass/style.scss */
+.ajax { clear: both; }
+
+/* line 65, ../sass/style.scss */
+.readonly-btn { border: 2px solid red; }
+
+/* line 66, ../sass/style.scss */
 .remove-readonly-btn { border: 2px solid #ddd; }
 
-/* line 63, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .disable-btn { border: 2px solid green; }
