@@ -118,13 +118,15 @@
                     $input.hide().before('<a href="#" class="fntv fntv-checkbox '+$klass+'"></a>');
                     $a = $label.find('.fntv');
 
-                    this.clicks();
+                    // transfer el attrs to classes for custom el
                     syncAttributes( $a, $input );
                     // set up watch source
                     watchAttributes( $a, $input );
+                    // init clicks
+                    this.clicks($a);
                 },
-                clicks: function(){
-                    if( $label.hasClass('fntv-disabled') ){
+                clicks: function($a){
+                    if( $a.hasClass('fntv-disabled') ){
                         return false;
                     }
 
@@ -175,13 +177,15 @@
                     $input.hide().before('<a href="#" class="fntv fntv-radio '+$klass+'"></a>');
                     $a = $label.find('.fntv');
 
-                    this.clicks();
+                    // transfer el attrs to classes for custom el
                     syncAttributes( $a, $input );
                     // set up watch source
                     watchAttributes( $a, $input );
+                    // init clicks
+                    this.clicks($a);
                 },
-                clicks: function(){
-                    if( $label.hasClass('fntv-disabled') ){
+                clicks: function($a){
+                    if( $a.hasClass('fntv-disabled') ){
                         return false;
                     }
 
@@ -270,10 +274,11 @@
 
                     // instantiate other methods
                     this.createOptions();
-                    this.clicks();
                     syncAttributes( $p, $el );
                     // set up watch source
                     watchAttributes( $p, $el );
+                    // init clicks
+                    this.clicks();
                 },
                 getNativeOptions: function(){
                     return $el.find("option").map(function(i){

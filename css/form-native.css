@@ -34,6 +34,4 @@
 /* line 133, ../sass/form-native.scss */
 .fntv.fntv-select .fntv-list > a.fntv-current-selection:after { content: '\00a0\2713'; }
 /* line 139, ../sass/form-native.scss */
-.fntv.fntv-readonly { border: 1px solid red !important; }
-/* line 142, ../sass/form-native.scss */
-.fntv.fntv-disabled { border: 1px solid green !important; opacity: .5; }
+.fntv.fntv-disabled { opacity: .5; }

@@ -136,11 +136,7 @@ $border: solid 1px lighten($foreground, 30%);
             }
         }
     } // close .fnt-v-select
-    &.fntv-readonly {
-        border: 1px solid red !important;
-    }
     &.fntv-disabled {
-        border: 1px solid green !important;
         opacity: .5;
     }
 } // close .fntv
