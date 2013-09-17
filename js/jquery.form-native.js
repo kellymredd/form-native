@@ -473,7 +473,12 @@
                             if( $filterList.length <= 1 ){
                                 // the ++filterCount screws things up if only
                                 // one item is in $filterList (ex: Florida)
-                                select.matchFiltered($filterList[0].index);
+                                var $fl = $filterList[0];
+                                if( ! $fl == undefined ){
+                                    // Pressing a letter that doens't match an option 
+                                    // makes $filterList[0] undefined so we check it first
+                                    select.matchFiltered($fl.index);
+                                }
                             } else {
                                 select.matchFiltered($filterList[filterCount].index);
                             }
