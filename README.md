@@ -11,14 +11,14 @@ Implementation
 
 Simply add form-native.js and form-native.css or .scss to your project and call it thusly:
 
-    $('#form-id').formidable();
+    $('#form-id').formnative();
 
 
-Form-native.js expected form element markup:
+Form-native.js expected form element markup(the span around the name of label is optional and is used only for vertical positioning):
 
 	<label>
 		<input type="text | radio | checkbox | etc">
-		Name of label
+		<span>Name of label</span>
 	</label>
 
 
