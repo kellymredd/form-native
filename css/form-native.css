@@ -1,129 +1,39 @@
-/*  
-    This is the form-native.js base css file.
-
-    This file contains the default styles for the custom form elements 
-    that users can override in their own custom style sheet.
+/*   This is the form-native.js base css file.
+ This file contains the default styles for the custom form elements  that users can override in their own custom style sheet.
 */
 /* line 42, ../sass/form-native.scss */
-.fntv {
-  /* optional span: for fine-tuning label text positioning */
-}
-/* line 43, ../sass/form-native.scss */
-.fntv.fntv-checkbox {
-  background: #fcfcfc;
-  border: 4px solid #666666;
-  float: left;
-  height: 20px;
-  margin-right: 5px;
-  width: 20px;
-}
-/* line 50, ../sass/form-native.scss */
-.fntv.fntv-checkbox.fntv-checkboxChecked {
-  background: #ff9999;
-}
-/* line 55, ../sass/form-native.scss */
-.fntv.fntv-radio {
-  background: #fcfcfc;
-  border: 4px solid #666666;
-  border-radius: 10px;
-  float: left;
-  height: 20px;
-  margin-right: 5px;
-  width: 20px;
-}
-/* line 63, ../sass/form-native.scss */
-.fntv.fntv-radio.fntv-radioChecked {
-  background: #ff9999;
-}
-/* line 70, ../sass/form-native.scss */
-.fntv.fntv-checkbox ~ span, .fntv.fntv-radio ~ span {
-  float: left;
-  margin-top: 3px;
-}
-/* line 75, ../sass/form-native.scss */
-.fntv.fntv-select {
-  position: relative;
-}
-/* line 77, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-select-box {
-  background-color: #fcfcfc;
-  border: solid 1px #b3b3b3;
-  color: #666666;
-  display: block;
-  overflow: hidden;
-  padding: 10px;
-  width: auto;
-  white-space: nowrap;
-}
-/* line 86, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-select-box:focus {
-  background: #fcfcfc;
-}
-/* line 89, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-select-box .fntv-arrow {
-  background: #fcfcfc;
-  border: solid 1px #b3b3b3;
-  cursor: pointer;
-  display: block;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 30px;
-}
-/* line 99, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-select-box .fntv-arrow:before {
-  border: solid 5px;
-  content: "";
-  display: block;
-  height: 0;
-  width: 0;
-  border-color: #666666 transparent transparent transparent;
-  left: 50%;
-  margin-top: -2.5px;
-  margin-left: -5px;
-  position: absolute;
-  top: 50%;
-}
-/* line 109, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-list {
-  background: #fcfcfc;
-  border: solid 1px #b3b3b3;
-  border-top: 0;
-  display: none;
-  height: 100%;
-  min-height: 150px;
-  overflow-y: scroll;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 5;
-}
-/* line 121, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-list.fntv-openAbove {
-  border: solid 1px #b3b3b3;
-}
-/* line 124, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-list > a {
-  color: #666666;
-  display: block;
-  padding: 4px;
-  width: 100%;
-}
-/* line 129, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-list > a.fntv-current-choice {
-  background: #ddd;
-}
-/* line 132, ../sass/form-native.scss */
-.fntv.fntv-select .fntv-list > a.fntv-current-selection:after {
-  content: '\00a0\2713';
-}
-/* line 138, ../sass/form-native.scss */
-.fntv.fntv-readonly {
-  border: 1px solid red !important;
-}
-/* line 141, ../sass/form-native.scss */
-.fntv.fntv-disabled {
-  border: 1px solid green !important;
-  opacity: .5;
-}
+.fntv { clear: both; /* optional span: for fine-tuning label text positioning */ }
+/* line 44, ../sass/form-native.scss */
+.fntv.fntv-checkbox { background: #fcfcfc; border: 4px solid #666666; float: left; height: 20px; margin-right: 5px; width: 20px; }
+/* line 51, ../sass/form-native.scss */
+.fntv.fntv-checkbox.fntv-checkboxChecked { background: #ff9999; }
+/* line 56, ../sass/form-native.scss */
+.fntv.fntv-radio { background: #fcfcfc; border: 4px solid #666666; border-radius: 10px; float: left; height: 20px; margin-right: 5px; width: 20px; }
+/* line 64, ../sass/form-native.scss */
+.fntv.fntv-radio.fntv-radioChecked { background: #ff9999; }
+/* line 71, ../sass/form-native.scss */
+.fntv.fntv-checkbox ~ span, .fntv.fntv-radio ~ span { float: left; margin-top: 3px; }
+/* line 76, ../sass/form-native.scss */
+.fntv.fntv-select { position: relative; }
+/* line 78, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-select-box { background-color: #fcfcfc; border: solid 1px #b3b3b3; color: #666666; display: block; overflow: hidden; padding: 10px; width: auto; white-space: nowrap; }
+/* line 87, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-select-box:focus { background: #fcfcfc; }
+/* line 90, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-select-box .fntv-arrow { background: #fcfcfc; border: solid 1px #b3b3b3; cursor: pointer; display: block; height: 100%; position: absolute; right: 0; top: 0; width: 30px; }
+/* line 100, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-select-box .fntv-arrow:before { border: solid 5px; content: ""; display: block; height: 0; width: 0; border-color: #666666 transparent transparent transparent; left: 50%; margin-top: -2.5px; margin-left: -5px; position: absolute; top: 50%; }
+/* line 110, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-list { background: #fcfcfc; border: solid 1px #b3b3b3; border-top: 0; display: none; height: 100%; min-height: 150px; overflow-y: scroll; position: absolute; top: 100%; width: 100%; z-index: 5; }
+/* line 122, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-list.fntv-openAbove { border: solid 1px #b3b3b3; }
+/* line 125, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-list > a { color: #666666; display: block; padding: 4px; width: 100%; }
+/* line 130, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-list > a.fntv-current-choice { background: #ddd; }
+/* line 133, ../sass/form-native.scss */
+.fntv.fntv-select .fntv-list > a.fntv-current-selection:after { content: '\00a0\2713'; }
+/* line 139, ../sass/form-native.scss */
+.fntv.fntv-readonly { border: 1px solid red !important; }
+/* line 142, ../sass/form-native.scss */
+.fntv.fntv-disabled { border: 1px solid green !important; opacity: .5; }

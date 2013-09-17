@@ -19,27 +19,30 @@
 
          <label for="test1">
             <input type="radio" id="test1" name="forms[test1]" value="Female">
-            Female
+            <span>Female</span>
         </label>
 
         <hr>
 
         <label for="test7">
-            <input type="checkbox" id="test7" name="forms[test2]" value="Cat">Cat
+            <input type="checkbox" id="test7" name="forms[test2]" value="Cat">
+            <span>Cat</span>
         </label>
         
         <label for="test8">
-            <input type="checkbox" id="test8" name="forms[test3]" value="Dog">Dog
+            <input type="checkbox" id="test8" name="forms[test3]" value="Dog">
+            <span>Dog</span>
         </label>
         
         <label for="test9">
-            <input type="checkbox" id="test9" name="forms[test4]" value="Fish">Fish
+            <input type="checkbox" id="test9" name="forms[test4]" value="Fish">
+            <span>Fish</span>
         </label>
 
         <hr>
 
         <span class="state">
-            <label class="requiredLabel" for="car_state">State</label><br/>
+            <label class="requiredLabel" for="car_state">State</label>
             <select name="forms[state1]" id="car_state1">
                 <option value="" selected="selected">Select your state</option>
                 <option value="AL">Alabama</option>
@@ -99,7 +102,7 @@
             </select>
         </span>
          <span class="state">
-            <label class="requiredLabel" for="car_state">State</label><br/>
+            <label class="requiredLabel" for="car_state">State</label>
             <select name="forms[state2]" id="car_state2">
                 <option value="" selected="selected">Select your state</option>
                 <option value="AL">Alabama</option>
@@ -159,7 +162,7 @@
             </select>
         </span>
          <span class="state">
-            <label class="requiredLabel" for="car_state">State</label><br/>
+            <label class="requiredLabel" for="car_state">State</label>
             <select name="forms[state3]" id="car_state3" placeholder="Select a State bro">
                 <option value="" selected="selected">Select your state</option>
                 <option value="AL">Alabama</option>
@@ -240,7 +243,7 @@
     <script src="js/jquery.form-native.js"></script>
     <script>
         $.fn.ready(function(){
-            $('form').formidable();
+            $('form').formnative();
 
 
             $('.submit').on('click', function(e){

@@ -40,6 +40,7 @@ $background: lighten(#000, 99%);
 $border: solid 1px lighten($foreground, 30%);
 
 .fntv {
+    clear: both;
     &.fntv-checkbox {
         background: $background;
         border: $borderSize solid $foreground;

@@ -1,83 +1,36 @@
 /* non form-native styles that either style the form or override form-native styles */
 /* line 3, ../sass/style.scss */
-* {
-  box-sizing: border-box;
-  line-height: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
+* { box-sizing: border-box; line-height: 100%; list-style-type: none; margin: 0; padding: 0; text-decoration: none; }
 
 /* line 12, ../sass/style.scss */
-html {
-  height: 100%;
-  width: 100%;
-}
+html { height: 100%; width: 100%; }
 
 /* line 17, ../sass/style.scss */
-body {
-  font-family: Arial;
-  height: 100%;
-  background: #f9f9f9;
-  margin: 0 auto;
-  padding-top: 50px;
-  width: 100%;
-  max-width: 960px;
-}
+body { font-family: Arial; height: 100%; background: #f9f9f9; margin: 0 auto; padding-top: 50px; width: 100%; max-width: 960px; }
 
 /* line 27, ../sass/style.scss */
-hr {
-  float: left;
-  height: 1px;
-  margin: 40px 0;
-  width: 100%;
-}
+hr { float: left; height: 1px; margin: 40px 0; width: 100%; }
 
 /* line 34, ../sass/style.scss */
-form {
-  padding: 0 10px;
-}
+form { padding: 0 10px; }
 
 /* line 38, ../sass/style.scss */
-button {
-  clear: both;
-  float: left;
-  margin-top: 30px;
-  padding: 10px 15px;
-}
+button { clear: both; float: left; margin-top: 30px; padding: 10px 15px; }
 
 /* line 45, ../sass/style.scss */
-.state {
-  display: block;
-  width: 33.334%;
-  float: left;
-  padding: 0 5px;
-}
+.state { display: block; width: 33.334%; float: left; padding: 0 5px; }
 
 /* line 52, ../sass/style.scss */
-label {
-  cursor: pointer;
-  float: left;
-  margin-right: 10px;
-}
+label { cursor: pointer; float: left; margin-right: 10px; }
 
 /* line 58, ../sass/style.scss */
-.ajax {
-  clear: both;
-}
+.ajax { clear: both; }
 
 /* line 61, ../sass/style.scss */
-.readonly-btn {
-  border: 2px solid red;
-}
+.readonly-btn { border: 2px solid red; }
 
 /* line 62, ../sass/style.scss */
-.remove-readonly-btn {
-  border: 2px solid #ddd;
-}
+.remove-readonly-btn { border: 2px solid #ddd; }
 
 /* line 63, ../sass/style.scss */
-.disable-btn {
-  border: 2px solid green;
-}
+.disable-btn { border: 2px solid green; }
